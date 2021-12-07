@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="img/main_bg_1.jpg" />
+  <title>발리휘트니스</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <style>
+    @media (min-width: 870px) {
+      .m_title_btn_4 {
+        display: none;
+      }
+
+      .m_title_btn_5 {
+        display: none;
+      }
+
+      .review_box h1 {
+        display: none;
+      }
+    }
+
+    @media (max-width: 870px) {
+      .container {
+        width: 100%;
+      }
+
+      .pc-menu a {
+        margin-left: 20px;
+      }
+
+      .title_3 {
+        display: block;
+        text-align: center;
+      }
+
+      .title_4 {
+        display: block;
+        text-align: center;
+      }
+
+      .title_3 h3 {
+        font-size: 18px;
+        margin-top: 0;
+      }
+
+      .title_3 h2 {
+        font-size: 32px;
+        margin-bottom: 50px;
+      }
+
+      .title_btn_4 {
+        display: none;
+      }
+
+      .title_btn_5 {
+        display: none;
+      }
+
+      .m_title_btn_4 {
+        width: 50%;
+      }
+
+      .m_title_btn_5 {
+        width: 50%;
+      }
+
+      .event_img {
+        width: 100%;
+      }
+
+      .coupon {
+        width: 50%;
+        display: inline;
+      }
+
+      .review_box {
+        width: 100%;
+      }
+
+      .review {
+        width: 80%;
+        text-align: left;
+        display: inline-block;
+        margin-bottom: 30px;
+      }
+
+      .review_text h1 {
+        display: none;
+      }
+    }
+
+    @media (min-width: 640px) {
+
+      .mobile-menu,
+      .menuwrap {
+        display: none;
+      }
+
+      .m_btn {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .bg_container {
+        height: 840px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .default_padding {
+        padding: 100px 0;
+      }
+
+      .pc-menu a {
+        display: none;
+      }
+
+      .title_1 {
+        margin-top: 40px;
+      }
+
+      .title_1 h1 {
+        font-size: 48px;
+      }
+
+      .btn {
+        display: none;
+      }
+
+      .title_2 h1 {
+        font-size: 32px;
+      }
+
+      .swiper-slide img {
+        border-radius: 14px;
+      }
+
+      .swiper-slide p {
+        font-size: 18px;
+      }
+
+      .m_title_btn_4 {
+        width: 100%;
+      }
+
+      .m_title_btn_5 {
+        width: 100%;
+      }
+
+      .coupon {
+        width: 100%;
+      }
+
+      .program_box {
+        width: 100%;
+      }
+
+      .program_img {
+        width: 100%;
+      }
+
+      .review {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .review_box h1 {
+        margin-left: 0;
+      }
+
+      .title_5 h2 {
+        font-size: 32px;
+      }
+
+      .swiper-slide h3 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="bg_container">
+      <div class="container">
+        <div class="header_inner">
+          <a href="index.html"><img src="img/logo_white.svg" class="logo"></a>
+          <button type="button" class="mobile-menu"><i class="fas fa-bars"></i></button>
+          <div class="menuwrap">
+            <nav id="menu">
+              <!-- "메뉴목록 표시" -->
+              <ul class="category_list">
+                <a class="link_sub_item" href="trainer.html">트레이너 소개</a>
+                <br><a class="link_sub_item" href="program.html">프로그램 소개</a>
+                <!-- <br><a class="link_sub_item" href="reviews.html">회원 후기</a> -->
+                <br><a class="link_sub_item" href="location.html">오시는 길</a>
+              </ul>
+              <a href="https://www.instagram.com/___bally____/"><img src="img/instagram.png" class="sns_img"></a>
+              <a href="https://pf.kakao.com/_FnQDK"><img src="img/kakaotalk.png" class="sns_img"></a>
+            </nav>
+          </div>
+
+
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              document.querySelector(".mobile-menu").addEventListener("click", function (e) {
+                if (document.querySelector('.menuwrap').classList.contains('on')) {
+                  //메뉴닫힘
+                  document.querySelector('.menuwrap').classList.remove('on');
+                  document.querySelector('.mobile-menu i').classList.remove('fa-times')
+                  document.querySelector('.mobile-menu i').classList.add('fa-bars');
+
+                  //페이지 스크롤 락 해제
+                  document.querySelector('#dimmed').remove();
+                } else {
+                  //메뉴펼침
+                  document.querySelector('.menuwrap').classList.add('on');
+                  document.querySelector('.mobile-menu i').classList.remove('fa-bars');
+                  document.querySelector('.mobile-menu i').classList.add('fa-times');
+
+                  //페이지 스크롤 락 레이어 추가
+                  let div = document.createElement('div');
+                  div.id = 'dimmed';
+                  document.body.append(div);
+
+                  //페이지 스크롤 락  모바일 이벤트 차단
+                  document.querySelector('#dimmed').addEventListener('scroll touchmove touchend mousewheel', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
+                  });
+
+                  //페이지 스크롤 락 레이어 클릭 메뉴 닫기
+                  document.querySelector('#dimmed').addEventListener('click', function (e) {
+                    document.querySelector(".mobile-menu").click();
+                  });
+                }
+              });
+            });
+
+          </script>
+          <!-- 모바일 메뉴 -->
+          <div class="pc-menu">
+            <a href="trainer.html">트레이너 소개</a>
+            <a href="program.html">프로그램 소개</a>
+            <!-- <a href="reviews.html">회원 후기</a> -->
+            <a href="location.html">오시는 길</a>
+          </div>
+        </div>
+
+        <div class="container_inner">
+          <div class="title_1" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+            <h1>내 몸에 필요한
+              <br>최적의 운동,
+            </h1>
+            <div class="opc">
+              <h1>발리휘트니스</h1>
+            </div>
+            <button class="btn title_btn_1" onclick="location.href='program.html' ">나에게 맞는 PT 찾아보기 💪</button>
+            <a href="#anchor_1"><button class="btn title_btn_2">이달의 할인혜택 알아보기 💫</button></a>
+            <button class="m_btn m_title_btn_1" onclick="location.href='program.html' ">나에게 맞는 PT 찾아보기 💪</button>
+            <a href="#anchor_1"><button class="m_btn m_title_btn_2">이달의 할인혜택 알아보기 💫</button></a>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $('anchor_1').click(function () {
+          $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+          }, 500);
+          return false;
+        });
+      </script>
+    </div>
+
+    <div class="container">
+      <div class="container_inner">
+        <div class="title_2 default_padding" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+          <h1>다양한 경험<font color="#ddd">과</font>
+            <br>노하우<font color="#ddd">를 겸비한</font>
+            <br>실력있는 트레이너<font color="#ddd">들이</font>
+            <br>
+            <font color="#f64f59">당신을 기다리고 있습니다.</font>
+          </h1>
+          <!-- Swiper -->
+          <div class="swiper mySwiper" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/trainer_1.jpg" class="img_trainer">
+                <p><strong>배성규</strong>
+                  <br>PT팀장
+                </p>
+              </div>
+              <div class="swiper-slide"><img src="img/trainer_2.jpg" class="img_trainer">
+                <p><strong>김동원</strong>
+                  <br>트레이너
+                </p>
+              </div>
+              <div class="swiper-slide"><img src="img/trainer_3.jpg" class="img_trainer">
+                <p><strong>김기만</strong>
+                  <br>트레이너
+                </p>
+              </div>
+              <div class="swiper-slide"><img src="img/trainer_4.jpg" class="img_trainer">
+                <p><strong>퍼블리</strong>
+                  <br>트레이너
+                </p>
+              </div>
+              <div class="swiper-slide"><img src="img/trainer_5.jpg" class="img_trainer">
+                <p><strong>윤</strong>
+                  <br>트레이너
+                </p>
+              </div>
+              <!--
+              <div class="swiper-slide"><img src="img/trainer_6.png" class="img_trainer">
+                <p>바디라인 전문
+                  <br><strong>홍문진 트레이너</strong>
+                </p>
+              </div>
+              <div class="swiper-slide"><img src="img/trainer_7.png" class="img_trainer">
+                <p>다이어트 전문
+                  <br><strong>박형진 트레이너</strong>
+                </p>
+              </div>
+              <div class="swiper-slide"><img src="img/trainer_8.png" class="img_trainer">
+                <p>바디라인 전문
+                  <br><strong>김수진 트레이너</strong>
+                </p>
+              </div>
+              <div class="swiper-slide"><img src="img/trainer_9.png" class="img_trainer">
+                <p>필라테스 전문
+                  <br><strong>윤지혜 트레이너</strong>
+                </p>
+              </div>
+              <div class="swiper-slide"><img src="img/trainer_10.png" class="img_trainer">
+                <p>요가 전문
+                  <br><strong>유현주 트레이너</strong>
+                </p>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 2.3,
+              spaceBetween: 15,
+            });
+          </script>
+          <div class="btn_area_right">
+            <button class="btn title_btn_3" onclick="location.href='trainer.html' ">전체 트레이너 보러가기 👀</button>
+          </div>
+          <button class="m_btn m_title_btn_3" onclick="location.href='trainer.html' ">전체 트레이너 보러가기 👀</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgc_black">
+      <div class="container">
+        <div class="container_inner">
+          <div class="title_3 default_padding" id="anchor_1">
+            <div class="event_text" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+              <h3>발리휘트니스 12월 EVENT</h3>
+              <h2>따뜻한 겨울을 위해🔥
+                <br>두가지 혜택을 쏩니다!
+              </h2>
+              <a href="https://pf.kakao.com/_FnQDK"><button class="title_btn_4">지금 혜택받고 PT등록 문의하기</button></a>
+            </div>
+            <div class="event_img">
+              <img src="img/coupon_1.png" class="coupon" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+              <img src="img/coupon_2.png" class="coupon" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+            </div>
+            <a href="https://pf.kakao.com/_FnQDK"><button class="m_title_btn_4">지금 혜택받고 PT등록 문의하기</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container_inner">
+        <div class="title_5 default_padding">
+          <h2>등록 가능한
+            <br>3개의 PT 프로그램
+          </h2>
+
+          <div class="swiper mySwiper" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide sp1" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img src="img/program_1_s.png">
+                <h3>세미 PT (30분)</h3>
+              </div>
+              <div class="swiper-slide sp2" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img src="img/program_2_s.png">
+                <h3>기본 PT</h3>
+              </div>
+              <div class="swiper-slide sp3" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img src="img/program_3_s.png">
+                <h3>재활 PT</h3>
+              </div>
+            </div>
+          </div>
+          <div class="btn_area_right">
+          <button class="btn title_btn_6" onclick="location.href='program.html' ">전체 프로그램 보러가기 👀</button>
+          </div>
+          <button class="m_btn m_title_btn_6" onclick="location.href='program.html' ">전체 프로그램 보러가기 👀</button>
+
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 2.3,
+              spaceBetween: 15,
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="bgc_softblue">
+      <div class="container">
+        <div class="container_inner">
+          <div class="title_4 default_padding">
+            <div class="review_box"  data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+              <h1>회원님들의
+                <br>생생한 <font color="f64f59">PT</font> 후기
+              </h1>
+              <div class="review"  data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img src="img/memoji_1.png" class="memoji">
+                <h5>⭐⭐⭐⭐⭐
+                  <br>PT 8개월, 김** 회원님
+                </h5>
+                <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+              </div>
+              <div class="review"  data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img src="img/memoji_2.png" class="memoji">
+                <h5>⭐⭐⭐⭐⭐
+                  <br>필라테스 3개월, 윤** 회원님
+                </h5>
+                <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+              </div>
+              <div class="review"  data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img src="img/memoji_3.png" class="memoji">
+                <h5>⭐⭐⭐⭐⭐
+                  <br>PT 5개월, 한** 회원님
+                </h5>
+                <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+              </div>
+              <button class="m_title_btn_5"  onclick="location.href='reviews.html' ">더 많은 후기 보러가기 👀</button>
+            </div>
+            <div class="review_text"  data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+              <h1>회원님들의
+                <br>생생한 <font color="f64f59">PT</font> 후기
+              </h1>
+              <button class="title_btn_5"  onclick="location.href='reviews.html' ">더 많은 후기 보러가기 👀</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <footer>
+      <div class="container">
+        <div class="container_inner">
+          <img src="img/logo_white.svg" class="logo footer_logo">
+          <a href="https://www.instagram.com/___bally____/"><img src="img/instagram.png" class="footer_sns"></a>
+          <a href="https://pf.kakao.com/_FnQDK"><img src="img/kakaotalk.png" class="footer_sns"></a>
+          <h4>서울특별시 은평구 서오릉로 110, 3층
+            <br>sienvk@naver.com
+          </h4>
+          <a href='tel:023838281'><h3>02-383-8281</h3></a>
+          <p>Copyrightⓒ BallyFitness All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

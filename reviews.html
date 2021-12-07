@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="img/main_bg_1.jpg" />
+  <title>발리휘트니스 | 회원 후기</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <style>
+    .fa-bars {
+      color: #000;
+    }
+
+    .fa-times {
+      color: #fff;
+    }
+
+    .pc-menu a {
+      color: #4a4a4a;
+    }
+
+    @media (min-width: 870px) {}
+
+    @media (max-width: 870px) {
+      .container {
+        width: 100%;
+      }
+
+      .pc-menu a {
+        margin-left: 20px;
+      }
+    }
+
+    @media (min-width: 640px) {
+
+      .mobile-menu,
+      .menuwrap {
+        display: none;
+      }
+
+      .m_btn {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .pc-menu a {
+        display: none;
+      }
+
+      .btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="btn_zone">
+      <button class="m_btn m_reviews_btn_1">PT 등록 문의하기</button>
+    </div>
+    <div class="container">
+      <div class="header_inner">
+        <a href="index.html"><img src="img/logo.svg" class="logo"></a>
+        <button type="button" class="mobile-menu"><i class="fas fa-bars"></i></button>
+        <div class="menuwrap">
+          <nav id="menu">
+            <!-- "메뉴목록 표시" -->
+            <ul class="category_list">
+              <a class="link_sub_item" href="trainer.html">트레이너 소개</a>
+              <br><a class="link_sub_item" href="program.html">프로그램 소개</a>
+              <!-- <br><a class="link_sub_item" href="reviews.html">회원 후기</a> -->
+              <br><a class="link_sub_item" href="location.html">오시는 길</a>
+            </ul>
+            <a href="https://www.instagram.com/___bally____/"><img src="img/instagram.png" class="sns_img"></a>
+            <a href="https://pf.kakao.com/_FnQDK"><img src="img/kakaotalk.png" class="sns_img"></a>
+          </nav>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector(".mobile-menu").addEventListener("click", function (e) {
+              if (document.querySelector('.menuwrap').classList.contains('on')) {
+                //메뉴닫힘
+                document.querySelector('.menuwrap').classList.remove('on');
+                document.querySelector('.mobile-menu i').classList.remove('fa-times')
+                document.querySelector('.mobile-menu i').classList.add('fa-bars');
+
+                //페이지 스크롤 락 해제
+                document.querySelector('#dimmed').remove();
+              } else {
+                //메뉴펼침
+                document.querySelector('.menuwrap').classList.add('on');
+                document.querySelector('.mobile-menu i').classList.remove('fa-bars');
+                document.querySelector('.mobile-menu i').classList.add('fa-times');
+
+
+                //페이지 스크롤 락 레이어 추가
+                let div = document.createElement('div');
+                div.id = 'dimmed';
+                document.body.append(div);
+
+                //페이지 스크롤 락  모바일 이벤트 차단
+                document.querySelector('#dimmed').addEventListener('scroll touchmove touchend mousewheel', function (e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return false;
+                });
+
+                //페이지 스크롤 락 레이어 클릭 메뉴 닫기
+                document.querySelector('#dimmed').addEventListener('click', function (e) {
+                  document.querySelector(".mobile-menu").click();
+                });
+              }
+            });
+          });
+        </script>
+        <!-- 모바일 메뉴 -->
+        <div class="pc-menu">
+          <a href="trainer.html">트레이너 소개</a>
+          <a href="program.html">프로그램 소개</a>
+          <!-- <a href="reviews.html"><strong>회원 후기</strong></a> -->
+          <a href="location.html">오시는 길</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container_inner">
+        <div class="reviews_1">
+          <h1 data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">회원 후기</h1>
+          <p data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">총 36개의 후기</p>
+          <div class="page_review_box">
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r36">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r35">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r34">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r33">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r32">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r31">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r30">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r29">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r28">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r27">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r26">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r25">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r24">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r23">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r22">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r21">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r20">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r19">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r18">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r17">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r16">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r15">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r14">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r13">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r12">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r11">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r10">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r9">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r8">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r7">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r6">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r5">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r4">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r3">
+              <img src="img/memoji_2.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>필라테스 3개월, 윤** 회원님
+              </h5>
+              <p>“친구한테 추천받고 오게됐는데 필라테스의 재미를 제대로 알게됐어요! 몸도 훨씬 유연해지고 체력도 좋아져서 하는 김에 PT도 주1회 추가했어요 ㅎㅎ”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r2">
+              <img src="img/memoji_3.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 5개월, 한** 회원님
+              </h5>
+              <p>“다른 PT샵에 시설이 아쉬워서 옮겼는데, 시설 뿐 아니라 가격도 합리적이라서 만족하고 잘 다니고 있습니다. 덕분에 한 달전에 바디프로필도 찍었어요!”</p>
+            </div>
+
+            <div class="page_review" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0" id="r1">
+              <img src="img/memoji_1.png" class="page_memoji">
+              <h5>⭐⭐⭐⭐⭐
+                <br>PT 8개월, 김** 회원님
+              </h5>
+              <p>“운동을 꼭 해야겠다고 마음만 먹고 있다가 다닌 첫 PT인데, 정말 하길 잘했다고 생각이 드네요! 시설도 정말 좋아서 다른 곳보다 추천드립니다:)”</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+<footer>
+  <div class="container">
+    <div class="container_inner">
+      <img src="img/logo_white.svg" class="logo">
+      <a href="https://www.instagram.com/___bally____/"><img src="img/instagram.png" class="footer_sns"></a>
+      <a href="https://pf.kakao.com/_FnQDK"><img src="img/kakaotalk.png" class="footer_sns"></a>
+      <h4>서울특별시 은평구 서오릉로 110, 3층
+        <br>sienvk@naver.com
+      </h4>
+      <a href='tel:023838281'><h3>02-383-8281</h3></a>
+      <p>Copyrightⓒ BallyFitness All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,28 @@
+/* 여백 초기회*/
+body, div, dl, dd, dt, ul, li, ul, ol, h1, h2, h3, h4, h5, h6, form, input,
+    legend, textarea, select, fieldset, p, button, img {margin: 0; padding: 0;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, table, a {font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 14px; line-height: 1.5; text-decoration: none;}
+
+    @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* 제목 스타일 초기화 */
+h2, h3, h4, h5, h6 {line-height: 1.4;}
+h1 {line-height: 1.4;}
+
+/* 버튼 클릭시 테두리 제거 */
+button:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+a:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth
+  }
