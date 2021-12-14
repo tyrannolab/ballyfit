@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="img/main_bg_1.jpg" />
+  <title>발리휘트니스 | 트레이너 소개</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <style>
+    .fa-bars {
+      color: #000;
+    }
+
+    .fa-times {
+      color: #fff;
+    }
+
+    .pc-menu a {
+      color: #4a4a4a;
+    }
+
+    @media (min-width: 870px) {}
+
+    @media (max-width: 870px) {
+      .container {
+        width: 100%;
+      }
+
+      .pc-menu a {
+        margin-left: 20px;
+      }
+
+      .trainer_img {
+        width: 240px;
+      }
+
+      .trainer_box p {
+        font-size: 24px;
+        top: -14%;
+      }
+
+      .modal_box {
+        width: 84%;
+      }
+    }
+
+    @media (min-width: 640px) {
+
+      .mobile-menu,
+      .menuwrap {
+        display: none;
+      }
+
+      .m_btn {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .pc-menu a {
+        display: none;
+      }
+
+      .btn {
+        display: none;
+      }
+
+      .trainer_img_box {
+        margin-top: 20px;
+      }
+
+      .filter_trainer_btn,
+      .toggle_all {
+        margin: 5px 5px 5px 0;
+      }
+
+      .trainer_img {
+        width: 42vw;
+        border-radius: 14px;
+        margin: 0 0 -20px 0;
+      }
+
+      .trainer_box p {
+        font-size: 18px;
+        top: -18%;
+      }
+
+      .modal_box {
+        width: 84%;
+        height: auto;
+        padding: 20px;
+      }
+
+      .tr_info_img {
+        width: 36%;
+      }
+
+      .tr_info_text {
+        margin-left: 30px;
+      }
+
+      .tr_info_logo {
+        margin-top: 50px;
+      }
+
+      .tr_info_text h2 {
+        font-size: 24px;
+      }
+
+      .tr_info_dsc {
+        clear: both;
+        margin: 20px 0 0 0;
+      }
+
+      .tr_info_dsc p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="modal_1">
+      <div class="modal_bg">
+        <div class="modal_box">
+          <img src="img/trainer_1.jpg" class="tr_info_img">
+          <div class="tr_info_text">
+            <img src="img/logo.svg" class="logo tr_info_logo">
+            <h2><strong>배성규</strong> PT팀장</h2>
+          </div>
+          <div class="tr_info_dsc">
+            <p>· 국민대 생활체육학과 졸업
+              <br>· 생활체육지도자 수영
+              <br>· 생활체육지도자 보디빌딩
+              <br>· 대한적십자사 라이프가드/안전강사
+              <br>· 운동처방사 2급
+              <br>· 동력수상레저기구 1급
+              <br>· 태권도 2단
+              <br>· SI 스킨스쿠버 – dive master
+              <br>· 글라스톤 테크닉 수료
+              <br>· PT 컨설팅 세일즈
+              <br>· 반얀트리 호텔 오아시스 - 수영팀장
+              <br>· 발리토탈휘트니스 본점 - 전수영팀
+            </p>
+          </div>
+          <button class="modal_btn_1">확인</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_2">
+      <div class="modal_bg">
+        <div class="modal_box">
+          <img src="img/trainer_2.jpg" class="tr_info_img">
+          <div class="tr_info_text">
+            <img src="img/logo.svg" class="logo tr_info_logo">
+            <h2><strong>김동원</strong> 트레이너</h2>
+          </div>
+          <div class="tr_info_dsc">
+            <p>· 생활체육지도자 보디빌딩
+              <br>· 퍼스널트레이너자격증 - fisaf
+              <br>· Championship diploma  member
+              <br>· 해부학 강의 수료 - 피사프
+              <br>· 마이슬림휘트니스 스피닝강사
+              <br>· 삼송월드 휘트니스 트레이너
+              <br>· 현짐 – PT팀장
+            </p>
+          </div>
+          <button class="modal_btn_2">확인</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_3">
+      <div class="modal_bg">
+        <div class="modal_box">
+          <img src="img/trainer_3.jpg" class="tr_info_img">
+          <div class="tr_info_text">
+            <img src="img/logo.svg" class="logo tr_info_logo">
+            <h2><strong>김기만</strong> 트레이너</h2>
+          </div>
+          <div class="tr_info_dsc">
+            <p>· 용인대학교유도학과졸업
+              <br>· 생활체육지도자3급 보디빌딩
+              <br>· 전국체전 유도 -60kg 서울시대표
+              <br>· 서울시장배 -60kg 1위
+              <br>· 세계청소년 선수권 선발전 3위
+              <br>· 전국체전 -60kg 3위
+              <br>· 미스터시흥보디빌딩 -60kg 1위
+              <br>· 미스터서울보디빌딩 -60kg 입상
+            </p>
+          </div>
+          <button class="modal_btn_3">확인</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_4">
+      <div class="modal_bg">
+        <div class="modal_box">
+          <img src="img/trainer_4.jpg" class="tr_info_img">
+          <div class="tr_info_text">
+            <img src="img/logo.svg" class="logo tr_info_logo">
+            <h2><strong>퍼블리</strong> 트레이너</h2>
+          </div>
+          <div class="tr_info_dsc">
+            <p></p>
+          </div>
+          <button class="modal_btn_4">확인</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_5">
+      <div class="modal_bg">
+        <div class="modal_box">
+          <img src="img/trainer_5.jpg" class="tr_info_img">
+          <div class="tr_info_text">
+            <img src="img/logo.svg" class="logo tr_info_logo">
+            <h2><strong>윤</strong> 트레이너</h2>
+          </div>
+          <div class="tr_info_dsc">
+            <p></p>
+          </div>
+          <button class="modal_btn_5">확인</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      function t1() {
+        document.querySelector(".modal_1").style.display = "block";
+      };
+
+      document.querySelector(".modal_btn_1").addEventListener("click", function () {
+        document.querySelector(".modal_1").style.display = "none";
+      });
+
+      function t2() {
+        document.querySelector(".modal_2").style.display = "block";
+      };
+
+      document.querySelector(".modal_btn_2").addEventListener("click", function () {
+        document.querySelector(".modal_2").style.display = "none";
+      });
+
+      function t3() {
+        document.querySelector(".modal_3").style.display = "block";
+      };
+
+      document.querySelector(".modal_btn_3").addEventListener("click", function () {
+        document.querySelector(".modal_3").style.display = "none";
+      });
+
+      function t4() {
+        document.querySelector(".modal_4").style.display = "block";
+      };
+
+      document.querySelector(".modal_btn_4").addEventListener("click", function () {
+        document.querySelector(".modal_4").style.display = "none";
+      });
+
+      function t5() {
+        document.querySelector(".modal_5").style.display = "block";
+      };
+
+      document.querySelector(".modal_btn_5").addEventListener("click", function () {
+        document.querySelector(".modal_5").style.display = "none";
+      });
+
+    </script>
+    <div class="container">
+      <div class="header_inner">
+        <a href="index.html"><img src="img/logo.svg" class="logo"></a>
+        <button type="button" class="mobile-menu"><i class="fas fa-bars"></i></button>
+        <div class="menuwrap">
+          <nav id="menu">
+            <!-- "메뉴목록 표시" -->
+            <ul class="category_list">
+              <a class="link_sub_item" href="trainer.html">트레이너 소개</a>
+              <br><a class="link_sub_item" href="program.html">프로그램 소개</a>
+              <!-- <br><a class="link_sub_item" href="reviews.html">회원 후기</a> -->
+              <br><a class="link_sub_item" href="location.html">오시는 길</a>
+            </ul>
+            <a href="https://www.instagram.com/___bally____/"><img src="img/instagram.png" class="sns_img"></a>
+            <a href="https://pf.kakao.com/_FnQDK"><img src="img/kakaotalk.png" class="sns_img"></a>
+          </nav>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector(".mobile-menu").addEventListener("click", function (e) {
+              if (document.querySelector('.menuwrap').classList.contains('on')) {
+                //메뉴닫힘
+                document.querySelector('.menuwrap').classList.remove('on');
+                document.querySelector('.mobile-menu i').classList.remove('fa-times')
+                document.querySelector('.mobile-menu i').classList.add('fa-bars');
+
+                //페이지 스크롤 락 해제
+                document.querySelector('#dimmed').remove();
+              } else {
+                //메뉴펼침
+                document.querySelector('.menuwrap').classList.add('on');
+                document.querySelector('.mobile-menu i').classList.remove('fa-bars');
+                document.querySelector('.mobile-menu i').classList.add('fa-times');
+
+
+                //페이지 스크롤 락 레이어 추가
+                let div = document.createElement('div');
+                div.id = 'dimmed';
+                document.body.append(div);
+
+                //페이지 스크롤 락  모바일 이벤트 차단
+                document.querySelector('#dimmed').addEventListener('scroll touchmove touchend mousewheel', function (e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return false;
+                });
+
+                //페이지 스크롤 락 레이어 클릭 메뉴 닫기
+                document.querySelector('#dimmed').addEventListener('click', function (e) {
+                  document.querySelector(".mobile-menu").click();
+                });
+              }
+            });
+          });
+        </script>
+        <!-- 모바일 메뉴 -->
+        <div class="pc-menu">
+          <a href="trainer.html"><strong>트레이너 소개</strong></a>
+          <a href="program.html">프로그램 소개</a>
+          <!-- <a href="reviews.html">회원 후기</a> -->
+          <a href="location.html">오시는 길</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container_inner">
+        <div class="trainer_1">
+          <h1 data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">트레이너 소개</h1>
+
+          <!-- hide
+          <div class="filter_trainer" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+            <button class="toggle_all">전체보기</button>
+            <button class="filter_trainer_btn toggle_1">벌크업</button>
+            <button class="filter_trainer_btn toggle_2">바디라인</button>
+            <button class="filter_trainer_btn toggle_3">다이어트</button>
+            <button class="filter_trainer_btn toggle_4">필라테스</button>
+            <button class="filter_trainer_btn toggle_5">요가</button>
+          </div> -->
+
+          <div class="trainer_img_box">
+            <div class="view_all">
+              <div class="trainer_box" onclick="t1()" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_1.jpg">
+                <p><strong>배성규</strong>
+                  <br>PT팀장
+                </p>
+              </div>
+              <div class="trainer_box" onclick="t2()" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_2.jpg">
+                <p><strong>김동원</strong>
+                  <br>트레이너
+                </p>
+              </div>
+              <div class="trainer_box" onclick="t3()" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_3.jpg">
+                <p><strong>김기만</strong>
+                  <br>트레이너
+                </p>
+              </div>
+              <div class="trainer_box" onclick="t4()" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_4.jpg">
+                <p><strong>퍼블리</strong>
+                  <br>트레이너
+                </p>
+              </div>
+              <div class="trainer_box" onclick="t5()" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_5.jpg">
+                  <p><strong>윤</strong>
+                    <br>트레이너
+                  </p>
+              </div>
+              <!--
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_6.png">
+                <p>바디라인 전문
+                  <br><strong>홍문진 트레이너</strong>
+                </p>
+              </div>
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_7.png">
+                <p>다이어트 전문
+                  <br><strong>박형진 트레이너</strong>
+                </p>
+              </div>
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_8.png">
+                <p>바디라인 전문
+                  <br><strong>김수진 트레이너</strong>
+                </p>
+              </div>
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_9.png">
+                <p>필라테스 전문
+                  <br><strong>윤지혜 트레이너</strong>
+                </p>
+              </div>
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0"><img
+                  class="trainer_img" src="img/trainer_10.png">
+                <p>요가 전문
+                  <br><strong>유현주 트레이너</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="view_1">
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_1.jpg">
+                <p>벌크업 전문
+                  <br><strong>김경훈 트레이너</strong>
+                </p>
+              </div>
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_5.png">
+                <p>벌크업 전문
+                  <br><strong>김명헌 트레이너</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="view_2">
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_2.jpg">
+                <p>바디라인 전문
+                  <br><strong>이정연 트레이너</strong>
+                </p>
+              </div>
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_8.png">
+                <p>바디라인 전문
+                  <br><strong>김수진 트레이너</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="view_3">
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_3.jpg">
+                <p>다이어트 전문
+                  <br><strong>윤지훈 트레이너</strong>
+                </p>
+              </div>
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_6.png">
+                <p>바디라인 전문
+                  <br><strong>홍문진 트레이너</strong>
+                </p>
+              </div>
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_7.png">
+                <p>다이어트 전문
+                  <br><strong>박형진 트레이너</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="view_4">
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_4.jpg">
+                <p>필라테스 전문
+                  <br><strong>김유진 트레이너</strong>
+                </p>
+              </div>
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_9.png">
+                <p>필라테스 전문
+                  <br><strong>윤지혜 트레이너</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="view_5">
+              <div class="trainer_box" data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">
+                <img class="trainer_img" src="img/trainer_10.png">
+                <p>요가 전문
+                  <br><strong>유현주 트레이너</strong>
+                </p>
+              </div>
+            </div> -->
+            </div>
+
+            <script>
+              document.querySelector(".toggle_all").addEventListener("click", function () {
+                document.querySelector(".view_all").style.display = "flex";
+                document.querySelector(".view_1").style.display = "none";
+                document.querySelector(".view_2").style.display = "none";
+                document.querySelector(".view_3").style.display = "none";
+                document.querySelector(".view_4").style.display = "none";
+                document.querySelector(".view_5").style.display = "none";
+                document.querySelector(".toggle_all").style.color = "#fff";
+                document.querySelector(".toggle_all").style.backgroundColor = "#f64f59";
+                document.querySelector(".toggle_all").style.borderColor = "#f64f59";
+                document.querySelector(".toggle_1").style.color = "#4a4a4a";
+                document.querySelector(".toggle_1").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_1").style.borderColor = "#ccc";
+                document.querySelector(".toggle_2").style.color = "#4a4a4a";
+                document.querySelector(".toggle_2").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_2").style.borderColor = "#ccc";
+                document.querySelector(".toggle_3").style.color = "#4a4a4a";
+                document.querySelector(".toggle_3").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_3").style.borderColor = "#ccc";
+                document.querySelector(".toggle_4").style.color = "#4a4a4a";
+                document.querySelector(".toggle_4").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_4").style.borderColor = "#ccc";
+                document.querySelector(".toggle_5").style.color = "#4a4a4a";
+                document.querySelector(".toggle_5").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_5").style.borderColor = "#ccc";
+              });
+
+              document.querySelector(".toggle_1").addEventListener("click", function () {
+                document.querySelector(".view_all").style.display = "none";
+                document.querySelector(".view_1").style.display = "flex";
+                document.querySelector(".view_2").style.display = "none";
+                document.querySelector(".view_3").style.display = "none";
+                document.querySelector(".view_4").style.display = "none";
+                document.querySelector(".view_5").style.display = "none";
+                document.querySelector(".toggle_all").style.color = "#4a4a4a";
+                document.querySelector(".toggle_all").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_all").style.borderColor = "#ccc";
+                document.querySelector(".toggle_1").style.color = "#fff";
+                document.querySelector(".toggle_1").style.backgroundColor = "#f64f59";
+                document.querySelector(".toggle_1").style.borderColor = "#f64f59";
+                document.querySelector(".toggle_2").style.color = "#4a4a4a";
+                document.querySelector(".toggle_2").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_2").style.borderColor = "#ccc";
+                document.querySelector(".toggle_3").style.color = "#4a4a4a";
+                document.querySelector(".toggle_3").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_3").style.borderColor = "#ccc";
+                document.querySelector(".toggle_4").style.color = "#4a4a4a";
+                document.querySelector(".toggle_4").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_4").style.borderColor = "#ccc";
+                document.querySelector(".toggle_5").style.color = "#4a4a4a";
+                document.querySelector(".toggle_5").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_5").style.borderColor = "#ccc";
+              });
+
+              document.querySelector(".toggle_2").addEventListener("click", function () {
+                document.querySelector(".view_all").style.display = "none";
+                document.querySelector(".view_1").style.display = "none";
+                document.querySelector(".view_2").style.display = "flex";
+                document.querySelector(".view_3").style.display = "none";
+                document.querySelector(".view_4").style.display = "none";
+                document.querySelector(".view_5").style.display = "none";
+                document.querySelector(".toggle_all").style.color = "#4a4a4a";
+                document.querySelector(".toggle_all").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_all").style.borderColor = "#ccc";
+                document.querySelector(".toggle_1").style.color = "#4a4a4a";
+                document.querySelector(".toggle_1").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_1").style.borderColor = "#ccc";
+                document.querySelector(".toggle_2").style.color = "#fff";
+                document.querySelector(".toggle_2").style.backgroundColor = "#f64f59";
+                document.querySelector(".toggle_2").style.borderColor = "#f64f59";
+                document.querySelector(".toggle_3").style.color = "#4a4a4a";
+                document.querySelector(".toggle_3").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_3").style.borderColor = "#ccc";
+                document.querySelector(".toggle_4").style.color = "#4a4a4a";
+                document.querySelector(".toggle_4").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_4").style.borderColor = "#ccc";
+                document.querySelector(".toggle_5").style.color = "#4a4a4a";
+                document.querySelector(".toggle_5").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_5").style.borderColor = "#ccc";
+              });
+
+              document.querySelector(".toggle_3").addEventListener("click", function () {
+                document.querySelector(".view_all").style.display = "none";
+                document.querySelector(".view_1").style.display = "none";
+                document.querySelector(".view_2").style.display = "none";
+                document.querySelector(".view_3").style.display = "flex";
+                document.querySelector(".view_4").style.display = "none";
+                document.querySelector(".view_5").style.display = "none";
+                document.querySelector(".toggle_all").style.color = "#4a4a4a";
+                document.querySelector(".toggle_all").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_all").style.borderColor = "#ccc";
+                document.querySelector(".toggle_1").style.color = "#4a4a4a";
+                document.querySelector(".toggle_1").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_1").style.borderColor = "#ccc";
+                document.querySelector(".toggle_2").style.color = "#4a4a4a";
+                document.querySelector(".toggle_2").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_2").style.borderColor = "#ccc";
+                document.querySelector(".toggle_3").style.color = "#fff";
+                document.querySelector(".toggle_3").style.backgroundColor = "#f64f59";
+                document.querySelector(".toggle_3").style.borderColor = "#f64f59";
+                document.querySelector(".toggle_4").style.color = "#4a4a4a";
+                document.querySelector(".toggle_4").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_4").style.borderColor = "#ccc";
+                document.querySelector(".toggle_5").style.color = "#4a4a4a";
+                document.querySelector(".toggle_5").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_5").style.borderColor = "#ccc";
+              });
+
+              document.querySelector(".toggle_4").addEventListener("click", function () {
+                document.querySelector(".view_all").style.display = "none";
+                document.querySelector(".view_1").style.display = "none";
+                document.querySelector(".view_2").style.display = "none";
+                document.querySelector(".view_3").style.display = "none";
+                document.querySelector(".view_4").style.display = "flex";
+                document.querySelector(".view_5").style.display = "none";
+                document.querySelector(".toggle_all").style.color = "#4a4a4a";
+                document.querySelector(".toggle_all").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_all").style.borderColor = "#ccc";
+                document.querySelector(".toggle_1").style.color = "#4a4a4a";
+                document.querySelector(".toggle_1").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_1").style.borderColor = "#ccc";
+                document.querySelector(".toggle_2").style.color = "#4a4a4a";
+                document.querySelector(".toggle_2").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_2").style.borderColor = "#ccc";
+                document.querySelector(".toggle_3").style.color = "#4a4a4a";
+                document.querySelector(".toggle_3").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_3").style.borderColor = "#ccc";
+                document.querySelector(".toggle_4").style.color = "#fff";
+                document.querySelector(".toggle_4").style.backgroundColor = "#f64f59";
+                document.querySelector(".toggle_4").style.borderColor = "#f64f59";
+                document.querySelector(".toggle_5").style.color = "#4a4a4a";
+                document.querySelector(".toggle_5").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_5").style.borderColor = "#ccc";
+              });
+
+              document.querySelector(".toggle_5").addEventListener("click", function () {
+                document.querySelector(".view_all").style.display = "none";
+                document.querySelector(".view_1").style.display = "none";
+                document.querySelector(".view_2").style.display = "none";
+                document.querySelector(".view_3").style.display = "none";
+                document.querySelector(".view_4").style.display = "none";
+                document.querySelector(".view_5").style.display = "flex";
+                document.querySelector(".toggle_all").style.color = "#4a4a4a";
+                document.querySelector(".toggle_all").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_all").style.borderColor = "#ccc";
+                document.querySelector(".toggle_1").style.color = "#4a4a4a";
+                document.querySelector(".toggle_1").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_1").style.borderColor = "#ccc";
+                document.querySelector(".toggle_2").style.color = "#4a4a4a";
+                document.querySelector(".toggle_2").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_2").style.borderColor = "#ccc";
+                document.querySelector(".toggle_3").style.color = "#4a4a4a";
+                document.querySelector(".toggle_3").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_3").style.borderColor = "#ccc";
+                document.querySelector(".toggle_4").style.color = "#4a4a4a";
+                document.querySelector(".toggle_4").style.backgroundColor = "#fff";
+                document.querySelector(".toggle_4").style.borderColor = "#ccc";
+                document.querySelector(".toggle_5").style.color = "#fff";
+                document.querySelector(".toggle_5").style.backgroundColor = "#f64f59";
+                document.querySelector(".toggle_5").style.borderColor = "#f64f59";
+              });
+            </script>
+
+            <button class="btn trainer_btn_1" onclick="location.href='program.html' ">나에게 맞는 PT 찾아보기 💪</button>
+            <a href="https://pf.kakao.com/_FnQDK"><button class="btn trainer_btn_2">PT 등록 문의하기</button></a>
+            <button class="m_btn m_trainer_btn_1" onclick="location.href='program.html' ">나에게 맞는 PT 찾아보기 💪</button>
+            <a href="https://pf.kakao.com/_FnQDK"><button class="m_btn m_trainer_btn_2">PT 등록 문의하기</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+<footer>
+  <div class="container">
+    <div class="container_inner">
+      <img src="img/logo_white.svg" class="logo">
+      <a href="https://www.instagram.com/___bally____/"><img src="img/instagram.png" class="footer_sns"></a>
+      <a href="https://pf.kakao.com/_FnQDK"><img src="img/kakaotalk.png" class="footer_sns"></a>
+      <h4>서울특별시 은평구 서오릉로 110, 3층
+        <br>sienvk@naver.com
+      </h4>
+      <a href='tel:023838281'><h3>02-383-8281</h3></a>
+      <p>Copyrightⓒ BallyFitness All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</html>
