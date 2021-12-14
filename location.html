@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="img/main_bg_1.jpg" />
+  <title>발리휘트니스 | 오시는 길</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <style>
+    .fa-bars {
+      color: #000;
+    }
+
+    .fa-times {
+      color: #fff;
+    }
+
+    .pc-menu a {
+      color: #4a4a4a;
+    }
+
+    @media (min-width: 870px) {}
+
+    @media (max-width: 870px) {
+      .container {
+        width: 100%;
+      }
+
+      .pc-menu a {
+        margin-left: 20px;
+      }
+    }
+
+    @media (min-width: 640px) {
+
+      .mobile-menu,
+      .menuwrap {
+        display: none;
+      }
+
+      .m_btn {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .pc-menu a {
+        display: none;
+      }
+
+      .btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="header_inner">
+        <a href="index.html"><img src="img/logo.svg" class="logo"></a>
+        <button type="button" class="mobile-menu"><i class="fas fa-bars"></i></button>
+        <div class="menuwrap">
+          <nav id="menu">
+            <!-- "메뉴목록 표시" -->
+            <ul class="category_list">
+              <a class="link_sub_item" href="trainers.html">트레이너 소개</a>
+              <br><a class="link_sub_item" href="programs.html">프로그램 소개</a>
+              <!-- <br><a class="link_sub_item" href="reviews.html">회원 후기</a> -->
+              <br><a class="link_sub_item" href="location.html">오시는 길</a>
+            </ul>
+            <a href="https://www.instagram.com/___bally____/"><img src="img/instagram.png" class="sns_img"></a>
+            <a href="https://pf.kakao.com/_FnQDK"><img src="img/kakaotalk.png" class="sns_img"></a>
+          </nav>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector(".mobile-menu").addEventListener("click", function (e) {
+              if (document.querySelector('.menuwrap').classList.contains('on')) {
+                //메뉴닫힘
+                document.querySelector('.menuwrap').classList.remove('on');
+                document.querySelector('.mobile-menu i').classList.remove('fa-times')
+                document.querySelector('.mobile-menu i').classList.add('fa-bars');
+
+                //페이지 스크롤 락 해제
+                document.querySelector('#dimmed').remove();
+              } else {
+                //메뉴펼침
+                document.querySelector('.menuwrap').classList.add('on');
+                document.querySelector('.mobile-menu i').classList.remove('fa-bars');
+                document.querySelector('.mobile-menu i').classList.add('fa-times');
+
+
+                //페이지 스크롤 락 레이어 추가
+                let div = document.createElement('div');
+                div.id = 'dimmed';
+                document.body.append(div);
+
+                //페이지 스크롤 락  모바일 이벤트 차단
+                document.querySelector('#dimmed').addEventListener('scroll touchmove touchend mousewheel', function (e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  return false;
+                });
+
+                //페이지 스크롤 락 레이어 클릭 메뉴 닫기
+                document.querySelector('#dimmed').addEventListener('click', function (e) {
+                  document.querySelector(".mobile-menu").click();
+                });
+              }
+            });
+          });
+        </script>
+        <!-- 모바일 메뉴 -->
+        <div class="pc-menu">
+          <a href="trainers.html">트레이너 소개</a>
+          <a href="programs.html">프로그램 소개</a>
+          <!-- <a href="reviews.html">회원 후기</a> -->
+          <a href="location.html"><strong>오시는 길</strong></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container_inner">
+        <div class="location_1">
+          <h1 data-aos="fade-in" data-aos-duration="500" data-aos-delay="0">오시는 길</h1>
+
+          <!-- * 카카오맵 - 지도퍼가기 -->
+          <!-- 1. 지도 노드 -->
+          <div id="daumRoughmapContainer1638562164616" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%"></div>
+
+          <!-- 2. 설치 스크립트
+          * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.-->
+          <script charset="UTF-8" class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+          <!-- 3. 실행 스크립트 -->
+          <script charset="UTF-8">
+            new daum.roughmap.Lander({
+              "timestamp": "1638562164616",
+              "key": "28ben",
+              "mapHeight": "360"
+            }).render();
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+<footer>
+  <div class="container">
+    <div class="container_inner">
+      <img src="img/logo_white.svg" class="logo">
+      <a href="https://www.instagram.com/___bally____/"><img src="img/instagram.png" class="footer_sns"></a>
+      <a href="https://pf.kakao.com/_FnQDK"><img src="img/kakaotalk.png" class="footer_sns"></a>
+      <h4>서울특별시 은평구 서오릉로 110, 3층
+        <br>sienvk@naver.com
+      </h4>
+      <a href='tel:023838281'><h3>02-383-8281</h3></a>
+      <p>Copyrightⓒ BallyFitness All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</html>
